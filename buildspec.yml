@@ -10,7 +10,7 @@ phases:
   build:
     commands:
       - echo "Deploying to S3..."
-      - aws s3 sync . s3://fwasgsdhtrh232323 --delete
+      - aws s3 sync . s3://deveshsharma.1milion.in --delete
       - echo "Creating CloudFront invalidation..."
       - aws cloudfront create-invalidation --distribution-id E34LOT5PYJB7FD --paths "/*"
 
